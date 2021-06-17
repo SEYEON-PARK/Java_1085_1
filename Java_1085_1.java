@@ -24,9 +24,9 @@ public class Main{ // Main 클래스 정의
         
         int a[]={x, y, one, two}; // 배열 a에 x, y, one, two 저장
         
-        for(int k=0;k<4;k++){
-            if(a[k]<result)
-                result=a[k];
+        for(int k=0;k<4;k++){ // k가 0부터 4보다 작을 때까지 1씩 증가하며 반복
+            if(a[k]<result) // 만약, a[k]가 result보다 작다면
+                result=a[k]; // result에 a[k]
         }
         
         System.out.println(result);
