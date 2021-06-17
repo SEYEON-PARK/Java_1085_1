@@ -7,22 +7,22 @@
 첫째 줄에 문제의 정답을 출력한다.
 */
 
-import java.util.Scanner;
+import java.util.Scanner; // 스캐너를 사용하기 위해
 
-public class Main{
-    public static void main(String [] args){
-        Scanner i=new Scanner(System.in);
-        int x, y, w, h;
-        x=i.nextInt();
-        y=i.nextInt();
+public class Main{ // Main 클래스 정의
+    public static void main(String [] args){ // main 메소드
+        Scanner i=new Scanner(System.in); // 스캐너 i 생성
+        int x, y, w, h; // 변수 생성
+        x=i.nextInt(); // 사용자로부터 정수 입력받기
+        y=i.nextInt(); //
         w=i.nextInt();
         h=i.nextInt();
         
-        int one, two, result=x;
-        one=w-x;
-        two=h-y;
+        int one, two, result=x; // 변수 생성 및 초기화
+        one=w-x; // one에 w-x 대입
+        two=h-y; // two에 h-y 대입
         
-        int a[]={x, y, one, two};
+        int a[]={x, y, one, two}; // 배열 a에 x, y, one, two 저장
         
         for(int k=0;k<4;k++){
             if(a[k]<result)
