@@ -14,9 +14,9 @@ public class Main{ // Main 클래스 정의
         Scanner i=new Scanner(System.in); // 스캐너 i 생성
         int x, y, w, h; // 변수 생성
         x=i.nextInt(); // 사용자로부터 정수 입력받기
-        y=i.nextInt(); //
-        w=i.nextInt();
-        h=i.nextInt();
+        y=i.nextInt(); // 사용자로부터 정수 입력받기
+        w=i.nextInt(); // 사용자로부터 정수 입력받기
+        h=i.nextInt(); // 사용자로부터 정수 입력받기
         
         int one, two, result=x; // 변수 생성 및 초기화
         one=w-x; // one에 w-x 대입
@@ -26,10 +26,10 @@ public class Main{ // Main 클래스 정의
         
         for(int k=0;k<4;k++){ // k가 0부터 4보다 작을 때까지 1씩 증가하며 반복
             if(a[k]<result) // 만약, a[k]가 result보다 작다면
-                result=a[k]; // result에 a[k]
+                result=a[k]; // result에 a[k] 대입
         }
         
-        System.out.println(result);
-        
+        System.out.println(result); // 결과 출력하기
+        i.close(); // 스캐너 i 종료하기
     }
 }
